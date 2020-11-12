@@ -18,34 +18,14 @@
     "test:auth": "cross-env DEBUG=rs:* TEST_MODE=auth jest --noStackTrace"
   },
   "keywords": [
-    "rs",
-    "school",
     "rest",
     "node",
     "express",
-    "autotest",
     "starter"
   ],
   "license": "ISC",
   "engines": {
     "node": ">=12.0.0"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "setupFilesAfterEnv": [
-      "./test/setup.js"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "npm run lint",
-      "git add"
-    ]
   },
   "dependencies": {
     "@hapi/joi": "^17.1.1",
